@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Send } from "lucide-react"
+import { Car, Send } from "lucide-react"
 
 // Define message type
 type Message = {
@@ -67,11 +67,11 @@ export default function ChatPage() {
     <div className="flex items-center justify-center min-h-screen bg-gray-50 p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Carter's AI Agent</CardTitle>
+          <CardTitle>Carter's AI Assistant</CardTitle>
         </CardHeader>
         <CardContent className="h-[60vh] overflow-y-auto space-y-4 p-4">
           {messages.length === 0 ? (
-            <div className="text-center text-gray-500 my-8">Send a message to start chatting</div>
+            <div className="text-center text-gray-500 my-8">I can answer questions, make appointments, let me surprise you!</div>
           ) : (
             messages.map((message) => (
               <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
@@ -117,7 +117,7 @@ export default function ChatPage() {
             </div>
           )}
         </CardContent>
-        <CardFooter>
+        <CardContent>
           <form onSubmit={handleSubmit} className="flex w-full gap-2">
             <Input
               value={input}
@@ -130,6 +130,11 @@ export default function ChatPage() {
               <Send className="h-4 w-4" />
             </Button>
           </form>
+        </CardContent>
+        <CardFooter>
+          <div className="w-full text-center text-xs text-gray-500">
+            Powered by <a href="https://langflow.new"><img src="/langflow-logo-black.svg" alt="Langflow" className="h-6 inline" /></a>
+          </div>
         </CardFooter>
       </Card>
     </div>

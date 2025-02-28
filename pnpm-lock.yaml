@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@datastax/langflow-client':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.2.1
+        version: 0.2.1
       '@hookform/resolvers':
         specifier: ^3.9.1
         version: 3.10.0(react-hook-form@7.54.2(react@18.3.1))
@@ -191,8 +191,8 @@ packages:
     resolution: {integrity: sha512-aA63XwOkcl4xxQa3HjPMqOP6LiK0ZDv3mUPYEFXkpHbaFjtGggE1A61FjFzJnB+p7/oy2gA8E+rcBNl/zC1tMg==}
     engines: {node: '>=6.9.0'}
 
-  '@datastax/langflow-client@0.2.0':
-    resolution: {integrity: sha512-AnLN3Imwpnvk9iuwvb74Yf7fQ4ENFMsjWNYDvVLZcm5bJ8GvHriv/ds7QTreH2AhFE0fih7F50REmAFyMkwoUA==}
+  '@datastax/langflow-client@0.2.1':
+    resolution: {integrity: sha512-wQmfw3W0LMFEPGen5HZg4l4TP6F/Egjr8bdSJhCI0PA+zyL874f+K0KEmJ9pDXgXMmZVccegvZwqquzxUYTBMA==}
 
   '@floating-ui/core@1.6.9':
     resolution: {integrity: sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==}
@@ -1983,7 +1983,7 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.1
 
-  '@datastax/langflow-client@0.2.0':
+  '@datastax/langflow-client@0.2.1':
     dependencies:
       mime: 4.0.6
       undici: 7.4.0
